@@ -30,13 +30,45 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+******
+A stateful component is always a class component. It is created by extending the React.Component class. A stateful component is dependent on it’s state object and can change it’s own state. The component re-renders based on changes to it’s state, and may pass down properties of it’s state to child components as properties on a props object.
+
 2. Describe the different phases of the component lifecycle.
+
+*******
+ A React Component can go through four stages of its life as follows.
+
+Initialization: This is the stage where the component is constructed with the given Props and default state. This is done in the constructor of a Component Class.
+Mounting: Mounting is the stage of rendering the JSX returned by the render method itself.
+Updating: Updating is the stage when the state of a component is updated and the application is repainted.
+Unmounting: As the name suggests Unmounting is the final step of the component lifecycle where the component is removed from the page.
+
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+*********
+link to a lifecycle diagram... https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+“Render phase”
+Pure and has no side effects. May be paused, aborted or restarted by React.
+
+“Commit phase”
+Can work with DOM, run side effects, schedule updates.
+
+The React component lifecycle is an important concept to leverage when it comes to writing React apps. For example, they are necessary in order for React apps to make API requests and then render based on the data that was received.
+
+
 4. Define stateful logic.
 
+*********
+State is a combination of values that describe the current condition of the UI. It can be shared between components in the sense that they are subscribed to its changes and, some of them, can perform changes on it.
+
+Stateful logic is any code that uses state, but in the case of hooks I would define it as a behaviour created with the use of one or more hooks. It's like a perk that you're adding to a component. A perk is a good example because it tells you that its value is specific to that component, but more than one component can have that perk, that's why it's called reusable.
+
 5. Describe how to test a React component with React Testing Library.
+
+******* 
+To be honest I just looked over the documentation on JEST and Googled some test examples for this one. I am still n ot 100% sure on how to accomplish adequate testing. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
